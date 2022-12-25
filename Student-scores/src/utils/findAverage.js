@@ -1,10 +1,10 @@
-function studentAverageNum({ scores }) {
+export function studentAverageNum({ scores }) {
     const sum = scores.reduce((accumulator, currentValue) => accumulator + currentValue);
     const avg = Math.round(sum / scores.length) || 0;
     return avg;
 }
 
-function studentAverageLetter({ grades }) {
+export function studentAverageLetter({ grades }) {
     const legend = {
         "A": 4,
         "A-": 3.76,
